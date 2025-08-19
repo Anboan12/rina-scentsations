@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rina Scentsations — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Rina Scentsations</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+    <div class="hero container">
+      <h1>Fragrances that tell your story</h1>
+      <p class="lead">Handcrafted scents, bold colors, memorable moments.</p>
+      <p><a class="cta" href="services.html">See our collection</a></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cards">
+      <article class="card">
+        <svg class="card-illustration" viewBox="0 0 120 80" preserveAspectRatio="xMidYMid meet"><rect width="120" height="80" rx="12" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff9a9e"/><stop offset="1" stop-color="#fad0c4"/></linearGradient></defs></svg>
+        <h3>Signature Scents</h3>
+        <p>Explore our curated line of signature fragrances inspired by nature and culture.</p>
+      </article>
+      <article class="card">
+        <svg class="card-illustration" viewBox="0 0 120 80"><rect width="120" height="80" rx="12" fill="url(#g2)"/><defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#a18cd1"/><stop offset="1" stop-color="#fbc2eb"/></linearGradient></defs></svg>
+        <h3>Gifts & Bundles</h3>
+        <p>Perfectly packaged bundles ideal for gifting — stylish, sustainable, and fragrant.</p>
+      </article>
+      <article class="card">
+        <svg class="card-illustration" viewBox="0 0 120 80"><rect width="120" height="80" rx="12" fill="url(#g3)"/><defs><linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#fbc2eb"/><stop offset="1" stop-color="#a6c1ee"/></linearGradient></defs></svg>
+        <h3>Workshops</h3>
+        <p>Learn to blend scents in hands-on workshops led by our master perfumers.</p>
+      </article>
+    </section>
+
+    <section class="newsletter">
+      <h2>Join our scent club</h2>
+      <p>Get early access, discounts, and behind-the-scenes stories.</p>
+      <form class="subscribe" onsubmit="alert('Thanks — this is a demo. Replace with your mailing code.'); return false;">
+        <input type="email" placeholder="Your email address" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rina Scentsations — Made with ❤️</p>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

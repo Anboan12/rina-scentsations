@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Rina Scentsations</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Rina Scentsations</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>Contact Us</h1>
+    <p>For orders, partnerships or workshops, drop us a line.</p>
+    <form class="contact-form" onsubmit="alert('This is a demo contact form. Replace with your server or form provider.'); return false;">
+      <label><span>Name</span><input required></label>
+      <label><span>Email</span><input type="email" required></label>
+      <label><span>Message</span><textarea required></textarea></label>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <h4>Location</h4>
+        <p>Madina, Accra</p>
+      </div>
+      <div class="contact-card">
+        <h4>Follow</h4>
+        <p>@RinaScents (replace with your handles)</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Rina Scentsations</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+      </nav>
+    </div>
+  </footer>
+
+<script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

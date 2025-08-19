@@ -1,0 +1,1 @@
+To deploy: unzip and push to a GitHub repo, then enable GitHub Pages on the repo settings. Ensure index.html is at the root.
