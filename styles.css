@@ -1,0 +1,83 @@
+
+/* Modern & colorful shared styles */
+:root{
+  --bg:#0f0c29;
+  --glass: rgba(255,255,255,0.06);
+  --accent1: #ff9a9e;
+  --accent2: #fad0c4;
+  --accent3: #a18cd1;
+  --accent4: #fbc2eb;
+  --accent5: #a6c1ee;
+  --max-width:1100px;
+  --radius:14px;
+  --gap:1.25rem;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(135deg,var(--accent3),var(--accent1));
+  color:white;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* container */
+.container{width:90%;max-width:var(--max-width);margin:0 auto;padding:2rem 0}
+
+/* header */
+.site-header{background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));padding-bottom:2rem;border-bottom-left-radius:28px;border-bottom-right-radius:28px}
+.site-header.small{padding:1rem 0.5rem}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{font-weight:700;letter-spacing:0.4px;color:white;text-decoration:none;font-size:1.15rem}
+.nav a{margin-left:1rem;color:rgba(255,255,255,0.95);text-decoration:none}
+.btn{background:linear-gradient(90deg,var(--accent4),var(--accent5));padding:0.5rem 0.9rem;border-radius:10px;color:#111;font-weight:600;text-decoration:none;border:none;cursor:pointer}
+.cta{background:rgba(255,255,255,0.12);padding:0.6rem 1rem;border-radius:12px;text-decoration:none;color:white;font-weight:600}
+
+/* hero */
+.hero{padding:3rem 0 4rem;text-align:center}
+.hero h1{font-size:2.25rem;margin:0 0 0.5rem;text-shadow:0 6px 20px rgba(0,0,0,0.35)}
+.lead{opacity:0.95;margin-bottom:1rem}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap);margin-top:1.5rem}
+.card{background:var(--glass);padding:1.25rem;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(0,0,0,0.15);transition:transform .25s ease, box-shadow .25s ease}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 36px rgba(0,0,0,0.22)}
+.card-illustration{width:100%;height:90px;border-radius:10px;margin-bottom:0.8rem;display:block}
+
+/* newsletter */
+.newsletter{margin:2.25rem 0;padding:1.5rem;border-radius:14px;background:linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));display:flex;flex-direction:column;align-items:center;justify-content:center}
+.subscribe{display:flex;gap:0.5rem;margin-top:0.75rem;width:100%;max-width:540px}
+.subscribe input{flex:1;padding:0.75rem;border-radius:10px;border:none;outline:none}
+.subscribe button{padding:0.75rem 1rem;border-radius:10px;border:none;cursor:pointer}
+
+/* content */
+.content h1{margin-top:1rem}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem}
+.team-card{background:var(--glass);padding:1rem;border-radius:12px;display:flex;flex-direction:column;align-items:center}
+.avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent3));display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* services */
+.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.service{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:1rem;border-radius:12px}
+
+/* contact */
+.contact-form{display:grid;gap:0.75rem;max-width:640px}
+.contact-form label{display:flex;flex-direction:column}
+.contact-form input,.contact-form textarea{padding:0.6rem;border-radius:10px;border:none;outline:none}
+.contact-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem}
+.contact-card{background:var(--glass);padding:1rem;border-radius:12px}
+
+/* footer */
+.site-footer{padding:1.25rem 0;text-align:center;margin-top:2rem}
+.footer-nav a{margin-left:0.6rem;color:rgba(255,255,255,0.85);text-decoration:none}
+
+/* responsive tweaks */
+@media (max-width:720px){
+  .nav{display:flex;gap:0.5rem;flex-wrap:wrap}
+  .hero h1{font-size:1.6rem}
+}
